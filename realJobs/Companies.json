@@ -1,0 +1,56 @@
+[
+  {
+    "companyName": "Google",
+    "domain": "google.com",
+    "subdomain": "careers",
+    "jobSearchPath": "/jobs/results/",
+    "jobSearchUrl": "https://careers.google.com/jobs/results/",
+    "lastVerified": "2025-05-02T15:21:27.044963",
+    "notes": "Job listings page available without login"
+  },
+  {
+    "companyName": "Microsoft",
+    "domain": "microsoft.com",
+    "subdomain": "careers",
+    "jobSearchPath": "/en-us/search-results",
+    "jobSearchUrl": "https://careers.microsoft.com/us/en/search-results",
+    "lastVerified": "2025-05-02T15:21:27.044972",
+    "notes": "LinkedIn matches mostly with query-string search"
+  },
+  {
+    "companyName": "Amazon",
+    "domain": "amazon.com",
+    "subdomain": "jobs",
+    "jobSearchPath": "/jobs/results",
+    "jobSearchUrl": "https://www.amazon.jobs/en/job_search",
+    "lastVerified": "2025-05-02T15:21:27.044974",
+    "notes": "Some jobs require user login"
+  },
+  {
+    "companyName": "Facebook",
+    "domain": "facebook.com",
+    "subdomain": "careers",
+    "jobSearchPath": "/careers/jobs/",
+    "jobSearchUrl": "https://www.facebook.com/careers/jobs/",
+    "lastVerified": "2025-05-02T15:21:27.044976",
+    "notes": "Job search uses form-based POST request"
+  },
+  {
+    "companyName": "Apple",
+    "domain": "apple.com",
+    "subdomain": "careers",
+    "jobSearchPath": "/search/",
+    "jobSearchUrl": "https://www.apple.com/careers/us/search/",
+    "lastVerified": "2025-05-02T15:21:27.044978",
+    "notes": "Job search is mostly query-string"
+  },
+  {
+    "companyName": "IBM",
+    "domain": "ibm.com",
+    "subdomain": "careers",
+    "jobSearchPath": "/employment/us/en/job-search",
+    "jobSearchUrl": "https://www.ibm.com/employment/us/en/job-search",
+    "lastVerified": "2025-05-02T15:21:27.044979",
+    "notes": "API search possible but limited to job ID"
+  }
+]

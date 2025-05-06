@@ -1,0 +1,52 @@
+[
+  {
+    "companyName":  "Google",
+    "searchType": "query-string",
+    "exampleQuery": "?q=software+engineer",
+    "method": "GET",
+    "matchPattern": "/jobs/",
+    "headers": {}
+  },
+  {
+    "companyName": "Microsoft",
+    "searchType": "query-string",
+    "exampleQuery": "?q=developer",
+    "method": "GET",
+    "matchPattern": "/en-us/",
+    "headers": {}
+  },
+  {
+    "companyname":  "Amazon",
+    "searchType": "path-match",
+    "exampleQuery": "/jobs/software-engineer-123",
+    "method": "GET",
+    "matchPattern": "/jobs/",
+    "headers": {}
+  },
+  {
+    "companyName":  "Facebook",
+    "searchType": "form",
+    "exampleQuery": "POST with job title in form",
+    "method": "POST",
+    "matchPattern": "/jobs/",
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  },
+  {
+    "companyName": "Apple",
+    "searchType": "query-string",
+    "exampleQuery": "?q=engineer",
+    "method": "GET",
+    "matchPattern": "/search/",
+    "headers": {}
+  },
+  {
+    "companyName":  "IBM",
+    "searchType": "query-string",
+    "exampleQuery": "?q=developer",
+    "method": "GET",
+    "matchPattern": "/job-search",
+    "headers": {}
+  }
+]
