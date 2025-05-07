@@ -26,5 +26,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-await DbSeeder.SeedAsync(app.Services);
+//await DbSeeder.SeedAsync(app.Services);
 app.Run();

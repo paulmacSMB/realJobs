@@ -5,7 +5,6 @@ namespace realJobs.DTOs
 {
     public class CompanyDto
     {
-        public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public string Domain { get; set; }
         public string Subdomain { get; set; }
@@ -14,6 +13,6 @@ namespace realJobs.DTOs
         public DateTime LastVerified { get; set; }
         public string Notes { get; set; }
 
-        public ICollection<SearchStrategy> SearchStrategies { get; set; } = new List<SearchStrategy>();
+        public ICollection<SearchStrategyDto> SearchStrategies { get; set; } = new List<SearchStrategyDto>();
     }
 }
