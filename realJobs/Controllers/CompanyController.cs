@@ -2,7 +2,7 @@
 using Logic.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace realJobs.Controllers
+namespace RealJobs.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

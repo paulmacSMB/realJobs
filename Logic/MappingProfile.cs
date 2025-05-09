@@ -8,7 +8,10 @@ namespace Logic
     {
         public MappingProfile()
         {
-            CreateMap<CompanyDto, Company>();
+            CreateMap<CompanyDto, Company>()
+                .ReverseMap();
+            CreateMap<SearchStrategyDto, SearchStrategy>()
+                .ReverseMap();
         }
     }
 }

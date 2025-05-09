@@ -3,7 +3,7 @@ using Logic.DTOs;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace realJobs
+namespace RealJobs
 {
     public static class DbSeeder
     {
