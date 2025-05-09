@@ -1,8 +1,5 @@
 ﻿using Data.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.Json;
-using Newtonsoft.Json;
-using realJobs.DTOs;
+using Logic.DTOs;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -48,8 +45,6 @@ namespace realJobs
                         Headers = s.Headers,
                     };
                 }).ToList();
-
-
 
                 context.SearchStrategies.AddRange(strategies);
                 await context.SaveChangesAsync();

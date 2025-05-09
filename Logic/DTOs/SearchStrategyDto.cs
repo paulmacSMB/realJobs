@@ -1,4 +1,4 @@
-﻿namespace realJobs.DTOs
+﻿namespace Logic.DTOs
 {
     public class SearchStrategyDto
     {

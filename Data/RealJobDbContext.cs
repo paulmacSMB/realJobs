@@ -1,8 +1,9 @@
-﻿using Data.Models;
+﻿using Data.Interfaces;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
-public class RealJobDbContext : DbContext
+public class RealJobDbContext : DbContext, IRealJobDbContext
 {
    
     public DbSet<Company> Companies { get; set; }
@@ -27,9 +28,6 @@ public class RealJobDbContext : DbContext
         modelBuilder.Entity<SearchStrategy>()
             .HasKey(s => s.StrategyId);
 
-
-
-        // Store Dictionary<string,string> as JSON string
         modelBuilder.Entity<SearchStrategy>()
             .Property(s => s.Headers)
             .HasConversion(

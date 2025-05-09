@@ -1,7 +1,4 @@
-﻿using Data.Models;
-using System.ComponentModel.DataAnnotations;
-
-namespace realJobs.DTOs
+﻿namespace Logic.DTOs
 {
     public class CompanyDto
     {
