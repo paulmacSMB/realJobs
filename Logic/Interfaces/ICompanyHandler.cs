@@ -4,6 +4,6 @@ namespace Logic.Interfaces
 {
     public interface ICompanyHandler
     {
-        public Task CreateCompanyAsync(CompanyDto company);
+        public Task CreateCompanyAsync(CompanyDto company, CancellationToken cancellationToken);
     }
 }

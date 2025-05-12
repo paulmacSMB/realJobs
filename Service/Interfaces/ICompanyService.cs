@@ -5,6 +5,6 @@ namespace Service.Interfaces
 {
     public interface ICompanyService
     {
-        public Task CreateCompanyAsync(Company company);
+        public Task CreateCompanyAsync(Company company, CancellationToken cancellationToken);
     }
 }

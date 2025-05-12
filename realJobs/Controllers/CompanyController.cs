@@ -14,17 +14,29 @@ namespace RealJobs.Controllers
         {
             _companyHandler = companyHandler;
         }
+
         [HttpPost]
-        public async Task<IActionResult> CreateCompanyAsync([FromBody] CompanyDto companyUrlData)
+        public async Task<IActionResult> CreateCompanyAsync([FromBody] CompanyDto companyUrlData, CancellationToken cancellationToken)
         {
             if (companyUrlData.Equals(null))
                 return BadRequest("Bad Request!");
 
-            await _companyHandler.CreateCompanyAsync(companyUrlData);
+            await _companyHandler.CreateCompanyAsync(companyUrlData, cancellationToken);
 
 
             return Ok(new { message = "Data Received" });
         }
+
+        //[HttpPost]
+        //public async Task<IActionResult> Post()
+        //{
+        //    using var reader = new StreamReader(Request.Body);
+        //    var body = await reader.ReadToEndAsync();
+        //    Console.WriteLine("Raw request body:");
+        //    Console.WriteLine(body);
+
+        //    return Ok();
+        //}
     }
 }
 
@@ -59,14 +71,4 @@ namespace RealJobs.Controllers
 //    }
 
 //    return Ok(new { message = "Data Received", count = companyUrlData.Count });
-//}
-//[HttpPost]
-//public async Task<IActionResult> Post()
-//{
-//    using var reader = new StreamReader(Request.Body);
-//    var body = await reader.ReadToEndAsync();
-//    Console.WriteLine("Raw request body:");
-//    Console.WriteLine(body);
-
-//    return Ok();
 //}

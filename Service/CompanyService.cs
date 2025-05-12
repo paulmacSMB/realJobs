@@ -12,9 +12,10 @@ namespace Service
             _context = context;
         }
 
-        public Task CreateCompanyAsync(Company companyDto)
+        public async Task CreateCompanyAsync(Company companyDto, CancellationToken cancellationToken)
         {
-            return Task.CompletedTask;
+            _context.Companies.Add(companyDto);
+            await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }

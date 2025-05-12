@@ -2,7 +2,7 @@
 {
     public class CompanyDto
     {
-        public int CompanyId { get; set; }
+        //public int CompanyId { get; set; }
         public string CompanyName { get; set; }
         public string Domain { get; set; }
         public string Subdomain { get; set; }

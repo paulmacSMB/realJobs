@@ -16,10 +16,10 @@ namespace Logic
             _mapper = mapper;
         }
 
-        public async Task CreateCompanyAsync(CompanyDto companyDto)
+        public async Task CreateCompanyAsync(CompanyDto companyDto, CancellationToken cancellationToken)
         {
             var company = _mapper.Map<Company>(companyDto);
-            await _companyService.CreateCompanyAsync(company);
+            await _companyService.CreateCompanyAsync(company, cancellationToken);
         }
     }
 }
